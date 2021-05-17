@@ -3,7 +3,9 @@ $("form").on("submit", function (e) {
   $("main").append(`
     <div class="card">
       <div class="card-body">
-        ${$("input:last").val()} - Le  ${$("input:first").val()}
+      <span style="color: ${$(
+        "input:eq(2)"
+      ).val()}">${$("input:eq(1)").val()}</span> - Le ${$("input:first").val()}
       </div>
     </div>
   `)
