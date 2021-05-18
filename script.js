@@ -15,7 +15,7 @@ function refresh() {
 }
 
 refresh()
-
+// No bug
 $("form").on("submit", function (e) {
   // e.preventDefault()
   // var newBirthday = {
