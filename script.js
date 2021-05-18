@@ -18,6 +18,7 @@ refresh()
 // No bug
 $("form").on("submit", function (e) {
   e.preventDefault()
+  // Nouveau code
   var newBirthday = {
     firstname: $("input:eq(1)").val(),
     date: $("input:first").val(),
