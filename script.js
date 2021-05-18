@@ -17,22 +17,25 @@ function refresh() {
 refresh()
 
 $("form").on("submit", function (e) {
-  e.preventDefault()
-  var newBirthday = {
-    firstname: $("input:eq(1)").val(),
-    date: $("input:first").val(),
-    color: $("input:last").val(),
-  }
+  // e.preventDefault()
+  // var newBirthday = {
+  //   firstname: $("input:eq(1)").val(),
+  //   date: $("input:first").val(),
+  //   color: $("input:last").val(),
+  // }
 
-  var list = JSON.parse(localStorage.getItem("anniversaires"))
-  if (!list) {
-    localStorage.setItem("anniversaires", JSON.stringify([newBirthday]))
-    refresh()
-  } else {
-    list.push(newBirthday)
-    localStorage.setItem("anniversaires", JSON.stringify(list))
-    refresh()
-  }
+  // var list = JSON.parse(localStorage.getItem("anniversaires"))
+  // if (!list) {
+  //   localStorage.setItem("anniversaires", JSON.stringify([newBirthday]))
+  //   refresh()
+  // } else {
+  //   list.push(newBirthday)
+  //   localStorage.setItem("anniversaires", JSON.stringify(list))
+  //   refresh()
+  // }
+  $("section").append(`<div class="alert alert-primary" role="alert">
+  Ceci est un bug
+</div>`)
 })
 
 $("button:last").on("click", function () {
